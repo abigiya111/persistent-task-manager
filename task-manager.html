@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>persistent-task-manager</title>
+    <link rel="stylesheet" href="task-manager.css">
+</head>
+<body>
+    <main id="app"> 
+    <h1>Task Manager</h1>
+    <section class="task-input-section"> 
+     <input type="text" id="taskInput" placeholder="New task..." autocomplete="off" > 
+     <button id="addBtn">Add</button>
+    </section>
+    <nav class="filters" aria-label="Task filters"> 
+        <button id="showAllBtn" class="filter-btn active-filter"> All </button>
+        <button id="showActiveBtn" class="filter-btn"> Active </button> 
+        <button id="showDoneBtn" class="filter-btn"> Done </button> 
+        
+    </nav>
+    <section class="tasks-section"> 
+        <ul id="taskList"> <!-- JavaScript will insert tasks here --> </ul>
+     </section>
+     <footer class="task-footer">
+         <span id="counter"> 0 active / 0 total </span> 
+         <button id="clearDoneBtn"> Clear Done </button> 
+    </footer> 
+</main>
+ <script src="task-manager.js"></script>
+</body>
+</html>
